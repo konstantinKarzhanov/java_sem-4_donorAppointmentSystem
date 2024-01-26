@@ -16,16 +16,17 @@ public class Donor {
     }
 
     public boolean canDonate(Appointment appointment) {
-        if (appointment.getDate() == null) return false;
-        if (this.lastDonationDate == null) return true;
-
-        Calendar appointmentDateCalendar = Calendar.getInstance();
-        appointmentDateCalendar.setTime(appointment.getDate());
-
-        Calendar allowedDonationDateCalendar = Calendar.getInstance();
-        allowedDonationDateCalendar.setTime(lastDonationDate);
-        allowedDonationDateCalendar.add(Calendar.DAY_OF_YEAR, 56);
-
-        return appointmentDateCalendar.after(allowedDonationDateCalendar);
+        return true;
+//        if (appointment.getDate() == null) return false;
+//        if (this.lastDonationDate == null) return true;
+//
+//        Calendar appointmentDateCalendar = Calendar.getInstance();
+//        appointmentDateCalendar.setTime(appointment.getDate());
+//
+//        Calendar allowedDonationDateCalendar = Calendar.getInstance();
+//        allowedDonationDateCalendar.setTime(lastDonationDate);
+//        allowedDonationDateCalendar.add(Calendar.DAY_OF_YEAR, 56);
+//
+//        return appointmentDateCalendar.after(allowedDonationDateCalendar);
     }
 }
